@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <section id="rsvp" class="hero section is-fullheight">
+    <div class="columns is-centered">
+      <div class="column is-6">
+        <br>
+        <br class="is-hidden-mobile">
+        <br class="is-hidden-mobile">
+        <br class="is-hidden-mobile">
+        <span class="is-size-2 rsvp-label-2">
+          <strong id="rsvp-title">Say You'll Be There!</strong>
+        </span>
+        <br>
+        <br>
+
+        <div id="rsvp-box" class="box">
+          <div id="rsvp-initial">
+            <div class="field">
+              <label class="label is-medium">Let's find your RSVP</label>
+              <div class="control">
+                <input id="email-input" class="input is-medium" type="text" placeholder="Email address">
+              </div>
+              <p id="help-message" class="help">Enter the email address that your invitation was sent to</p>
+              <div class="field">
+                <p class="control">
+                  <button id="check-email" onclick="checkEmail()" class="button is-link is-medium">
+                    Continue
+                  </button>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <br>
+    <br>
+    {% include 'design.html' %}
+  </section>
+{% endblock content %}
